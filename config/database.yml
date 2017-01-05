@@ -29,7 +29,7 @@ default: &default
   username: <%= ENV['DATABASE_USER_NANE'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
   timeout: 25
-  dataserver: from_freetds.conf
+  dataserver: freetds.conf
 
 development:
   <<: *default
