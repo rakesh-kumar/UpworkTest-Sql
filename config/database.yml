@@ -28,8 +28,10 @@ default: &default
   reconnect: false
   username: <%= ENV['DATABASE_USER_NANE'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  post: <%= ENV['DATABASE_PORT'] %>
   timeout: 25
-  dataserver: freetds.conf
+  # dataserver: freetds.conf
 
 development:
   <<: *default
