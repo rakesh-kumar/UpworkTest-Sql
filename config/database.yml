@@ -65,6 +65,6 @@ development:
 #
 production:
   <<: *default
-  database: UpworkTest_production
+  database: UpworkTest_development
   username: <%= ENV['DATABASE_USER_NANE'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
